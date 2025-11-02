@@ -9,6 +9,7 @@
   --color-section-title: #353430;
   --menu-color: #353430;
   --border-menu-color: #353430;
+  --border-menu-color-light: rgba(50, 49, 45, 0.4);
 }
 
 .theme-light .rec__label {
