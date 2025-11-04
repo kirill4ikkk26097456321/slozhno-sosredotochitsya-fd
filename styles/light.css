@@ -12,15 +12,18 @@
   --border-menu-color-light: rgba(50, 49, 45, 0.4);
 }
 
-.theme-light .rec__label {
-  display: none;
-}
-
-.theme-light .rec__label::after {
-  content: none;
-}
-
-.theme-light .decorated-zone::before,
-.theme-light .decorated-zone::after {
-  border-color: var(--border-menu-color);
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --background-image: url(../images/cover-image-light.png);
+    --bg-color: #353430;
+    --accent-color: #FF8DCB;
+    --color-title: #FFC2E6;
+    --color-title-text: #FF8DCB;
+    --color-text: #353430;
+    --title-decor: #FF8DCB;
+    --color-section-title: #353430;
+    --menu-color: #353430;
+    --border-menu-color: #353430;
+    --border-menu-color-light: rgba(50, 49, 45, 0.4);
+  }
 }
