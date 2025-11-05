@@ -9,7 +9,7 @@
   --color-section-title: #353430;
   --menu-color: #353430;
   --border-menu-color: #353430;
-  --border-menu-color-light: rgba(50, 49, 45, 0.4);
+  --border-menu-color-hover: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,6 +24,40 @@
     --color-section-title: #353430;
     --menu-color: #353430;
     --border-menu-color: #353430;
-    --border-menu-color-light: rgba(50, 49, 45, 0.4);
+    --border-menu-color-hover: rgba(50, 49, 45, 0.4);
   }
+
+  .theme-auto .decorated-zone::before,
+  .theme-auto .decorated-zone::after {
+    border-color: var(--border-menu-color);
+  }
+
+  .theme-auto .rec__label {
+    display: none;
+  }
+
+  .theme-auto .rec__label::after {
+    content: none;
+  }
+
+  .theme-auto .header__theme-menu-button_active {
+    border-color: var(--border-menu-color);
+  }
+}
+
+.theme-light .decorated-zone::before,
+.theme-light .decorated-zone::after {
+  border-color: var(--border-menu-color);
+}
+
+.theme-light .rec__label {
+  display: none;
+}
+
+.theme-light .rec__label::after {
+  content: none;
+}
+
+.theme-light .header__theme-menu-button_active {
+  border-color: var(--border-menu-color);
 }
